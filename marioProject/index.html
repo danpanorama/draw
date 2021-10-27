@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    
+    <script src="./js/init.js"></script>
+    <script src="./js/maneger.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/listenerEvent.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/funcCavas.js"></script>
+    <script src="./js/displaySqure.js"></script>
+    <script src="./js/clikeListener.js"></script>
+    <script src="./js/controllers/colorSelector.js"></script>
+    <script src="./js/controllers/colorSelectRGB.js"></script>
+    <script src="./js/controllers/refreshButen.js"></script>
+    <script src="./js/controllers/windowListener.js"></script>
+    <script src="./js/page/mandalot.js"></script>
+    <script src="./js/controllers/rightClick.js"></script>
+    <script src="./js/page/menuDraw.js"></script>
+    <script src="./js/controllers/canvasMandala.js"></script>
+    <script src="./js/controllers/canvasMandalaInputs.js"></script>
+    <script src="./js/controllers/colorPicker.js"></script>
+
+
+    
+
+
+    <title>martin</title>
+</head>
+<body id="body">
+    <div class="displayFlex" >  
+      <div id="menuDraw">
+    </div>
+    <main id="main" class="main">
+
+
+        <div class="draws" id="draws">
+
+
+
+         
+
+        
+        </div>
+
+    </main>
+    </div>
+  
+<footer id="footer">
+
+</footer>   
+
+<script>
+
+  function dragFunction(e){
+    console.log("ele")
+    document.querySelectorAll(".table_d").forEach((ele)=>{             
+          ele.addEventListener('dragover',(e)=>{
+          e.target.style.backgroundColor=localStorage.getItem("color");
+                  return
+              })
+            })
+  }
+
+
+</script>
+</body>
+</html>

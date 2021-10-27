@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.displayFlex {
+  display: flex;
+  flex-direction: row;
+}
+.heads {
+  width: auto;
+  background-color: aqua;
+  position: relative;
+  transition: all 1s ease;
+}
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
+
+.draws {
+  padding: 10px;
+  background-color: blueviolet;
+  height: 90%;
+}
+
+.table_d {
+}
+
+.table_d:nth-child(odd) {
+  background-color: black;
+}
+.color_table {
+  border: 1px solid black;
+}
+
+.colorSelector {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 250px;
+  overflow: scroll;
+  box-shadow: inset 10px 25px black;
+}
+
+.realetiv {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+
+.h-w-100 {
+  height: 100vh;
+  width: 80vw;
+  position: relative;
+}
+
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
